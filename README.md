@@ -33,6 +33,7 @@ workflow.do('johns', function(){
 })
 
 // .wait defines a special kind of state, the function doesn't run until 
+// workflow.resume() is called
 workflow.wait('waitToEnd', function(){
   console.log('ive been resumed');
   // call the end state
