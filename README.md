@@ -1,7 +1,7 @@
 # states
 A very simple state machine in JS
 
-<code>
+```javascript
 var states = require('./states.js');
 
 // define a new state machine
@@ -56,4 +56,4 @@ workflow.start();
 // now wait 1 second and then resume
 setTimeout(workflow.resume, 1000);
 
-</code>
+```
