@@ -1,6 +1,8 @@
+var states = require('./states.js');
+
 // define a new state machine
-var workflow = new statemach();
- 
+var workflow = new states();
+
 // .do(name, function) defines a state in the machine
 workflow.do('start', function(){
   // set some internal data, this.data holds that data
@@ -22,7 +24,7 @@ workflow.do('log', function(){
 
 // define another state
 workflow.do('johns', function(){
-  console.log('johns branch');
+  console.log('johns branch, ill wait now');
   return this.waitToEnd;
 })
 
